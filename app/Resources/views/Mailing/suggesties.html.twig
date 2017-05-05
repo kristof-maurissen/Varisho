@@ -1,0 +1,46 @@
+{% extends "base.html.twig" %}
+{% block body %}
+	<div class="container-fluid">
+		<p><a href='{{ path('homepage') }}'>Ga terug naar homepage</a></p>
+		<div id="logo">
+			<a href='{{ path('homepage') }}'><img src='{{ asset('images/Logo klein.png') }}' class="img-border"></a>
+		</div>
+		<div id="contentwrapper">
+			<div id="content">
+				
+				{{ form_start(form, {attr: {novalidate: 'novalidate'}}) }}
+					
+
+				    <div class="row space-bottom">
+				    	<label class="col-xs-12 col-sm-12 col-md-2">{{ form_label(form.naam) }}</label>
+				        <div class="col-xs-12 col-sm-12 col-md-5">{{ form_widget(form.naam) }}</div>
+				       	<div class="col-xs-12 col-sm-12 col-md-5 red">{{ form_errors(form.naam) }}</div>
+				    </div>
+
+				   	<div class="row space-bottom">
+				    	<label class="col-xs-12 col-sm-12 col-md-2">{{ form_label(form.email) }}</label>
+				        <div class="col-xs-12 col-sm-12 col-md-5">{{ form_widget(form.email) }}</div>
+				       	<div class="col-xs-12 col-sm-12 col-md-5 red">{{ form_errors(form.email) }}</div>
+				    </div>
+				    <div class="row space-bottom">
+				    	<label class="col-xs-12 col-sm-12 col-md-2">{{ form_label(form.suggesties) }}</label>
+				        <div class="col-xs-12 col-sm-12 col-md-5">{{ form_widget(form.suggesties) }}</div>
+				        <div class="col-xs-12 col-sm-12 col-md-5 red">{{ form_errors(form.suggesties) }}</div>
+				    </div>
+
+				    {# Render CSRF token etc .#}
+				    <div style="display:none">
+				        {{ form_rest(form) }}
+				    </div>
+				    <div class="row space-bottom">
+				    	<div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-6"><input type="submit" value="Verstuur" id="button-size"></div>
+					</div>
+				    
+				{{ form_end(form) }}
+
+
+			</div>
+		</div>
+		<p><a href='{{ path('homepage') }}'>Ga terug naar homepage</a></p>
+	</div>
+{% endblock %}

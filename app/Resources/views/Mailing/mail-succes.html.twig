@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+{% block body %}
+	<div class="container-fluid">
+		<div id="logo">
+			<a href='{{ path('homepage') }}'><img src='{{ asset('images/Logo klein.png') }}' class="img-border"></a>
+		</div>
+		<div id="contentwrapper">
+			<div id="content">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-5">
+						<p class="bold">Uw email is verstuurd !</p>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-5">
+						<p><a href='{{ path('homepage') }}'>Ga terug naar homepage</a></p>
+					</div>
+					<div class="space-large-bottom"></div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="space-large-bottom"></div>
+{% endblock %}

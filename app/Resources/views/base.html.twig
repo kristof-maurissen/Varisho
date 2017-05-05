@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="varisho, web shop, webshop, webshops, zoekmachine, search engine, searchengine, zoek machine, web store, webstore, online winkel, online winkels, onlineshoppen">
+        <title>{% block title %}Varisho{% endblock %}</title>
+
+        {% block stylesheets %}{% endblock %}
+
+        <link rel="icon" type="image/gif" href="{{ asset('animated_favicon.ico') }}" />
+        <!-- CompLied and minified CSS for Bootstrap -->
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" />
+
+        <link rel="stylesheet" href="{{ asset('css/custom.css') }}"/>
+    </head>
+    <body>
+
+        <!-- Header op elke pagina -->
+        <header>
+            <center>
+            <nav class="navbar navbar-default" id="nav_container">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobLie display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <!-- Collect the nav links for toggling-->
+                    <div class="collapse navbar-collapse " id="myNavbar">
+                        <ul class="nav navbar-nav" id="myNavUl" >
+                            <li class="myNavLi">
+                                <a href='{{ path('homepage') }}'><img src='{{ asset('images/logo_facebook_like_button_big.jpg') }}' class="img-myresponsive" id="social"></a>
+                            </li>
+                            <li class="myNavLi">
+                                <a href='{{ path('homepage') }}'><img src='{{ asset('images/logo_google.jpg') }}' class="img-myresponsive" id="social"></a>
+                            </li>
+                            <li class="myNavLi">
+                                <a href='{{ path('homepage') }}'><img src='{{ asset('images/logo_yahoo1.jpg') }}' class="img-myresponsive" id="social"></a>
+                            </li>
+                            <li class="myNavLi">
+                                <a href='{{ path('homepage') }}'><img src='{{ asset('images/logo_bing.jpg') }}' class="img-myresponsive" id="social"></a>
+                            </li>
+                            <li class="myNavLi">
+                                <a href='{{ path('homepage') }}'><img src='{{ asset('images/logo_youtube.jpg') }}' class="img-myresponsive" id="social"></a>
+                            </li>
+                            <li class="myNavLi">
+                                <a href='{{ path('homepage') }}'><img src='{{ asset('images/logo_facebook.jpg') }}' class="img-myresponsive" id="social"></a>
+                            </li>
+                            <li class="myNavLi">
+                                <a href='{{ path('homepage') }}'><img src='{{ asset('images/logo_twitter1.jpg') }}' class="img-myresponsive" id="social"></a>
+                            </li>
+                        </ul>                           
+                    </div><!-- /.navbar-collapse -->
+
+                </div><!-- /.container-fluid -->
+            </nav>
+            </center>
+        </header>
+
+        <main>{% block body %}{% endblock %}</main>
+
+        <!-- Footer op elke pagina -->
+        <footer class="navbar navbar-default" id="nav_container">
+            <center>
+            <div class="container-fluid">
+                <div class="row footer">
+                    <div class="col-xs-12 col-sm-4 col-md-4"><a href='{{ path('homepage') }}'>Hoe werkt Varisho ?</a></div>
+                    <div class="col-xs-12 col-sm-4 col-md-4"><a href='{{ path('privacy') }}'>Privacy</a></div>
+                    <div class="col-xs-12 col-sm-4 col-md-4"><a href='{{ path('contact') }}'>Contact</a></div>
+                </div>
+                <div class="row footer">
+                    <div class="col-xs-12 col-sm-4 col-md-4"><a href='{{ path('homepage') }}'>Registreer je webshop</a></div>
+                    <div class="col-xs-12 col-sm-4 col-xs-12 col-sm-4 col-md-4"><a href='{{ path('algemene-voorwaarden') }}'>Algemene voorwaarden</a></div>
+                    <div class="col-xs-12 col-sm-4 col-md-4"><a href='{{ path('homepage') }}'>Meldt fraude</a></div>
+                </div>
+                <div class="row footer">
+                    <div class="col-xs-12 col-sm-4 col-md-4"><a href='{{ path('suggesties') }}'>Suggesties</a></div>
+                    <div class="col-xs-12 col-sm-4 col-md-4"><a href='{{ path('cookies') }}'>Cookies</a></div>
+                    <div class="col-xs-12 col-sm-4 col-md-4"><a href='{{ path('homepage') }}'>Webmaster</a></div>
+                </div>
+                <div class="row footer">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="footer-copyright">
+                            <div class="center-align">
+                                <p>© 2017 Copyright Varisho</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </center>
+        </footer>
+
+
+        <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+
+        {% block javascripts %}{% endblock %}
+        <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+    </body>
+</html>
