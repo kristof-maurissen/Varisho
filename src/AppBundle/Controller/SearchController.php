@@ -29,12 +29,41 @@ class SearchController extends Controller
 
             $results = $form->getData();
 
-            return $this->redirectToRoute('Search/results.html.twig', array(
-                'results' => $results
+            $shops = $this->getDoctrine()
+        ->getRepository('AppBundle:Shops')
+        ->findAll($results);
+
+            return $this->redirectToRoute('index', array('shops' => $shops
                 ));
         }
 
         return $this->render('Search/index.html.twig', array(
+            'form' => $form->createView(), 'shops' => $shops
+            ));
+    }
+
+    /**
+     * @Route("Search/results", name="results")
+     */
+    
+
+    public function resultsAction(Request $request)
+    {
+
+        $form = $this->createForm(SearchType::class);
+
+        $form->handleRequest($request);
+
+        if ($form->isSubmitted()) {
+
+            $results = $form->getData();
+
+            //return $this->redirectToRoute('Search/results.html.twig', array(
+                //'results' => $results
+               // ));
+        }
+
+        return $this->render('Search/results.html.twig', array(
             'form' => $form->createView()
             ));
     }

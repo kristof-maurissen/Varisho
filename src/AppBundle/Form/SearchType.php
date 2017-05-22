@@ -22,8 +22,9 @@ class SearchType extends AbstractType
             ->add('search', TextType::class,
                 array(
                 	'label' => 'Zoek een webshop :',
+
                 	'constraints' => array(
-                		new NotBlank(array("message" => "Gelieve zoekwoord in te vullen" ))
+                		new NotBlank(array("message" => "Gelieve iets te vullen" ))
                 		),
                 )
             )
@@ -37,7 +38,7 @@ class SearchType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class' => Shops::class,
+            //'data_class' => Shops::class,
             'error_bubbling' => true
         ));
     }

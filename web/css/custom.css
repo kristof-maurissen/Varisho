@@ -3,6 +3,112 @@ body {
 	margin: 0px;
 	padding: 0px;
 }
+.red{
+	color: red;
+	font-weight: bold;
+}
+
+.col_padding{
+	padding: 2px;
+}
+#logo_searchBox{
+	
+	background-color: #0000FF;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border:2px solid #0000FF;
+	width: 100%
+	height: 20px;
+	margin: auto;
+	padding-top:2.5px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 2.5px;
+	
+
+}
+.img-responsive {
+	max-width:100%;
+	height: 30px;
+	display: block;
+	margin: 0;
+	padding:0;
+
+}
+input[type=text]#searchBox{
+	margin: auto;
+	width: 100%;
+	height: 40px;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	font-size:16px;
+	background:#fff;
+	border:4px solid #0000FF;
+	outline:none;
+	padding-top:5px;
+ 	padding-right: 8px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+	
+}
+/*input[type=text]:focus#searchBox{
+	border:4px solid #56b4ef;
+	box-shadow:0px 0px 5px 3px #c8def0;
+}*/
+
+#searchButton{
+	width:100%;
+	height: 40px;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	background-color:#fff;
+	border:4px solid #00f;
+	padding:8px;
+	font-size:12px;
+	font: bolder, Gadget, sans-serif;
+	color:black;
+	cursor: pointer
+
+}
+.shadow {
+	width:490px;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	font-size:16px;
+	background:#fff;
+	border:4px solid #56b4ef;
+	outline:none;
+	padding-top:5px;
+
+ 	padding-right: 8px;
+	padding-bottom: 5px;
+	padding-left: 8px;	
+}
+.shadow:focus {
+	border:5px solid #56b4ef;
+	box-shadow:0px 0px 5px 3px #c8def0;
+}
+
+.button {
+	width:100px;
+	
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	
+	background-color:#00F;
+	border:2px solid #00f;
+	padding:8px;
+	font-size:18px;
+	font: bolder, Gadget, sans-serif;
+	color:#fff;
+	cursor: pointer;
+
+}
 #social{
 	width: 60px;
 	height: 35px;
@@ -36,7 +142,12 @@ ul#myNavUl{
 }
 .nav {
 	margin: 0 auto;
+}
+.navbar-collapse > li {
+    text-align: center;
+    display: block;
 }*/
+
 .navbar-nav {
     float:none;
     margin:0 auto;
@@ -81,7 +192,7 @@ a:link {
 	right: 0px;
 }*/
 #contentwrapper {
-	width: 60%;
+	width: 80%;
 	margin-top: 25px;
 	margin-right: auto;
 	margin-bottom: 0px;
@@ -121,7 +232,17 @@ a:link {
 	margin-top: 54px;
 	margin-left: 380px;
 	z-index: 100;
-	background-image: url(Afbeeldingen/Logo%20klein.png);
+	background-image: url(Afbeeldingen/Logo klein.png);
+}
+
+.search_label{
+	font-weight: bold;
+	font-size: 14px;
+	padding-top: 5px;
+}
+
+.search_widget{
+	size: 10px
 }
 
 #footer {

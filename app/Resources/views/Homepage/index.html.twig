@@ -1,5 +1,24 @@
 {% extends 'base.html.twig' %}
 {% block body %}
+	<div class="container-fluid floating_box">
+		<form>
+		
+			<div class="col-xs-2 col-sm-3 col-md-3 col_padding">
+				<button type="button" id="logo_searchBox">
+					<img src='{{ asset('images/Logo klein.png') }}' class="img-responsive img-rounded">
+				</button>	
+			</div>
+			<div class="col-xs-8 col-sm-6 col-md-6 col_padding">
+				<input type="text" name="zoeken" id="searchBox">
+			</div>
+			<div class="col-xs-2 col-sm-3 col-md-3 col_padding">
+				<button type="submit" id="searchButton">
+					<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+				</button> 
+			</div>
+		</form>
+	</div>
+</div>
 <br>
 <br>
 <br>

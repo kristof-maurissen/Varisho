@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+body {
+	margin: 0px;
+	padding: 0px;
+}
+.red{
+	color: red;
+	font-weight: bold;
+}
+
+.col_padding{
+	padding: 2px;
+}
+#logo_searchBox{
+	
+	background-color: #0000FF;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border:2px solid #0000FF;
+	width: 100%
+	height: 20px;
+	margin: auto;
+	padding-top:2.5px;
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 2.5px;
+	
+
+}
+.img-responsive {
+	max-width:100%;
+	height: 30px;
+	display: block;
+	margin: 0;
+	padding:0;
+
+}
+input[type=text]#searchBox{
+	margin: auto;
+	width: 100%;
+	height: 40px;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	font-size:16px;
+	background:#fff;
+	border:4px solid #0000FF;
+	outline:none;
+	padding-top:5px;
+ 	padding-right: 8px;
+	padding-bottom: 5px;
+	padding-left: 8px;
+	
+}
+/*input[type=text]:focus#searchBox{
+	border:4px solid #56b4ef;
+	box-shadow:0px 0px 5px 3px #c8def0;
+}*/
+
+#searchButton{
+	width:100%;
+	height: 40px;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	background-color:#fff;
+	border:4px solid #00f;
+	padding:8px;
+	font-size:12px;
+	font: bolder, Gadget, sans-serif;
+	color:black;
+	cursor: pointer
+
+}
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }

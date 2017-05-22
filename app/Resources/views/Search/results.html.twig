@@ -2,28 +2,26 @@
 {% block body %}
 	<div class="container-fluid">
 		<p><a href='{{ path('homepage') }}'>Ga terug naar homepage</a></p>
-		<div id="logo">
-			<a href='{{ path('homepage') }}'><img src='{{ asset('images/Logo klein.png') }}' class="img-border"></a>
+		<div>
+			<a href='{{ path('homepage') }}'><img src='{{ asset('images/Logo klein.png' ) }}' id="logo" class="img-border"></a>
 		</div>
 		<div id="contentwrapper">
 			<div id="content">
-				
-				
+				Test results
+
 				<ul>
-					{% for result in results %}
+					{% for shop in shops %}
 						<li>
-							{{ shops.id }}<br>
-				{{ shops.shopName }}<br>
-				{{ shops.description }}<br>
-				{{ shops.url }}<br>
-				{{ shops.keywords }}<br
-							>
+							{{ shop.id }}<br>
+				
 							
 						</li>
 					{% endfor %}
 				</ul>
+				
+				
 				   	
-				    
+				   
 				   
 				    
 			
